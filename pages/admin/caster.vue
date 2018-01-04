@@ -77,6 +77,7 @@
           'Curtis',
           'InanimateJ',
           'Kend0',
+          'NinjaRider',
           'Stax'
         ]
       }
