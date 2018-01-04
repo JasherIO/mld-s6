@@ -3,7 +3,7 @@
     <img alt="Base" src="/Scoreboard/Base.png" />
     <img alt="Logo" src="/Scoreboard/Logo.png" />
     
-    <img alt="Ad" src="/Scoreboard/Ads/Twitter.png" />
+    <img alt="Ad" :src="adUrl" />
 
     <img alt="Week" :src="weekUrl" />
     
@@ -53,13 +53,27 @@
         const score = this.$store.state.scoreboard.away.score
         return `${baseUrl}/Away/Score/${score}.png`
       },
+      adUrl: function () {
+        const ad = this.ads[this.index]
+        return `${baseUrl}/Ads/${ad}.png`
+      },
       ...Vuex.mapState(['scoreboard'])
     },
     created () {
       this.$store.dispatch('setScoreboardRef', scoreboardRef)
     },
+    mounted () {
+      setInterval(this.updateIndex, 45000)
+    },
+    methods: {
+      updateIndex () {
+        const size = this.ads.length
+        this.index = (this.index + 1) % size
+      }
+    },
     data () {
       return {
+        index: 0,
         ads: [
           'Artic',
           'Patreon',

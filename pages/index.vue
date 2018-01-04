@@ -93,6 +93,8 @@
             </v-flex>
           </v-layout>
 
+          <v-divider />
+
           <v-subheader>Week</v-subheader>
 
           <v-layout row>
