@@ -5,6 +5,9 @@
 </template>
 
 <style>
+  html {
+    overflow: hidden;
+  }
   img {
     position: fixed;
     top: 0;
