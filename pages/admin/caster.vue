@@ -74,6 +74,7 @@
         casters: [
           'Achieves',
           'ChimBlade',
+          'Curtis',
           'InanimateJ',
           'Kend0',
           'Stax'
