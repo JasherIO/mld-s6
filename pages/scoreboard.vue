@@ -76,6 +76,7 @@
         index: 0,
         ads: [
           'Artic',
+          'Bawls',
           'Patreon',
           'Store',
           'Twitter'
