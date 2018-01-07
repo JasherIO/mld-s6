@@ -2,8 +2,24 @@ import { firebaseMutations, firebaseAction } from 'vuexfire'
 
 export const state = () => ({
   sidebar: false,
-  scoreboard: null,
-  caster: null
+  scoreboard: {
+    home: {
+      alternate: false,
+      team: '',
+      score: ''
+    },
+    away: {
+      alternate: false,
+      team: '',
+      score: ''
+    },
+    league: '',
+    week: ''
+  },
+  caster: {
+    left: '',
+    right: ''
+  }
 })
 
 export const mutations = {
