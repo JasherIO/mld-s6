@@ -75,6 +75,7 @@
           'Achieves',
           'ChimBlade',
           'Curtis',
+          'Dazerin',
           'InanimateJ',
           'Kend0',
           'NinjaRider',
