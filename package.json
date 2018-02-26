@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "firebase": "^4.8.1",
+    "lodash": "^4.17.5",
     "nuxt": "^1.0.0-rc11",
     "vuetify": "^0.17.4",
     "vuexfire": "^2.3.0"

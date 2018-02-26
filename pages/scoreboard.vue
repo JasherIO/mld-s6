@@ -19,6 +19,7 @@
 
 <script>
   import Vuex from 'vuex'
+  import _ from 'lodash'
 
   import { db } from '~/services/firebase/index'
   const scoreboardRef = db.ref('/scoreboard')
@@ -61,6 +62,7 @@
     },
     created () {
       this.$store.dispatch('setScoreboardRef', scoreboardRef)
+      this.index = _.sample(_.range(_.size(this.ads)))
     },
     mounted () {
       setInterval(this.updateIndex, 45000)
